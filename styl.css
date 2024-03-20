@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+/*------------------------共通部分*/
+html {
+  font-family: "游明朝 Demibold";
+  color: #505046;
+  font-size: 10px;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*背景*/
+.wrap {
+  background-image: url(../img/bread1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap::after {
+  content: "";
+  background: rgba(255, 255, 255, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #505046;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.wrap h1 {
+  font-size: 7rem;
+  text-align: left;
+  line-height: 1.6;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 200px;
+  left: calc((100% - 256px) / 2);
+  z-index: 1;
+}
+
+h2 {
+  font-size: 5rem;
+  display: block;
+  padding-top: 150px;
+}
+
+h2::after {
+  content: "";
+  height: 8px;
+  width: 176px;
+  background-color: #d9d9d9;
+  display: block;
+  border-radius: 15px;
+  margin: 16px auto 80px;
+}
+
+.post_code {
+  font-size: 1.6rem;
+}
+
+.breadth {
+  width: 800px;
+  margin: 0 auto;
+}
+
+footer .arrow {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 45px;
+  height: auto;
+  opacity: .5;
+}
+
+/*------------------------ヘッダー*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, .25);
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 58px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+}
+
+.header .logo img {
+  width: auto;
+  height: 80px;
+  margin: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  width: 140px;
+  font-size: 1.8rem;
+}
+
+.nav a {
+  display: block;
+}
+
+.contact {
+  background-color: #505046;
+  border-radius: 30px;
+  padding: 10px 0;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.contact a {
+  color: #fff;
+}
+
+/*--------------------こだわり部分ー*/
+#info {
+  background-image: url(../img/flour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 738px;
+}
+
+#info .comment {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/*---------------こだわりのパン部分ー*/
+#work {
+  margin: 0 auto;
+  padding: 0 0 150px;
+  background-color: #fcf9f3;
+}
+
+#work ul {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+#work li img {
+  width: 250px;
+  height: 250px;
+}
+
+#work a:hover {
+  opacity: 0.7;
+}
+
+/*---------------------アクセス部分ー*/
+#about {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#about .photo {
+  width: calc(100% / 2);
+  background-image: url(../img/shop.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+#about .shop {
+  width: calc(100% / 2);
+  background-color: #505046;
+  margin: 0;
+  color: #fff;
+}
+
+#about .shop h2 {
+  padding-top: 45px;
+  margin: 0 auto;
+}
+
+#about .shop h2::after {
+  margin-bottom: 40px;
+}
+
+#about .shop p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 auto;
+  padding-right: 5px;
+}
+
+.shop .address {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.shop .address ul {
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.shop .address li {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.shop .address li::before {
+  content: url("../img/bullet.png");
+  margin-right: 5px;
+}
+
+.shop a {
+  color: #fff;
+}
+
+#about img {
+  display: block;
+  margin: 45px auto 0;
+  padding: 0 0 45px;
+  width: 80%;
+  height: auto;
+}
+
+/*-----------------------フッター部分*/
+footer {
+  background-color: #fcf9f3;
+  padding-top: 90px;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto 32px;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+footer .logo {
+  display: inline;
+  width: 250px;
+  height: auto;
+  margin: 0 auto 58px;
+}
+
+footer .line {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+}
+
+small {
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+footer small a {
+  display: inline;
+}
+
+/*-------------------ここからスマホ用*/
+@media screen and (max-width: 836px) {
+  .wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .wrap::after {
+    background-image: url("../img/bread1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 4rem;
+    padding-top: 100px;
+  }
+
+  h2::after {
+    height: 6px;
+    width: 140px;
+  }
+
+  .breadth {
+    width: 96%;
+  }
+
+  .post_code {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    background-color: rgba(255, 255, 255, .8);
+    background-position: bottom;
+    height: 70px;
+    padding: 10px 20px;
+  }
+
+  .header .logo img {
+    display: inline;
+    width: auto;
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .d_hidden {
+    display: none;
+  }
+
+  .d_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .d_open span,
+  .d_open span::before,
+  .d_open span::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #505046;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  .d_open span::before {
+    bottom: 8px;
+  }
+
+  .d_open span::after {
+    top: 8px;
+  }
+
+  #drawer:checked~.d_open span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #drawer:checked~.d_open span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer:checked~.d_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .nav_cotent {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 100%;
+    z-index: 999;
+    transition: 0.5s;
+  }
+
+  .nav_cotent ul {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: celc((100% - 200px) / 2);
+  }
+
+  .nav_cotent li {
+    font-size: 2.4rem;
+    margin: 0 auto 25px;
+    width: 200px;
+  }
+
+  #drawer:checked~.nav_cotent {
+    left: 0;
+  }
+
+  .wrap h1 {
+    font-size: 6rem;
+    top: 140px;
+    left: calc((100% - 192px) / 2);
+    z-index: 1;
+  }
+
+  #info {
+    background-position: center;
+  }
+
+  #info .comment {
+    background-color: rgba(255, 255, 255, .5);
+    width: fit-content;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    padding: 10px;
+  }
+
+  #work ul {
+    display: block;
+  }
+
+  #work li img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto 25px;
+  }
+
+  #about {
+    display: block;
+  }
+
+  #about .photo {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 0;
+  }
+
+  #about .shop {
+    width: 100%;
+  }
+
+  .shop .address {
+    display: block;
+  }
+
+  .shop .address ul {
+    margin: 30px;
+  }
+
+  .shop .address a {
+    display: inline;
+  }
+
+  .shop img {
+    padding: 0 0 30px;
+  }
+
+  .footer {
+    display: block;
+    width: fit-content;
+  }
+
+  .footer .line {
+    width: 30px;
+    height: auto;
+    display: block;
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+}
